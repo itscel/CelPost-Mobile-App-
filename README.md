@@ -37,7 +37,8 @@ This command will move the starter code to the **app-example** directory and cre
 
 ## Learn more
 
-To learn more about developing your project with Expo, look at the following resources:
+To learn more about developing your project
+with Expo, look at the following resources:
 
 - [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
 - [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
@@ -51,19 +52,19 @@ Join our community of developers creating universal apps.
 
 
 ## File Structure:
-app/
- ├── _layout.tsx           ← Root layout (wraps everything in AuthProvider & handles protected routes)
- ├── login.tsx             ← Login screen
- └── (tabs)/               
-      ├── _layout.tsx      ← Tab navigation setup
-      └── index.tsx        ← Home screen (Post UI + greeting + logout)
+- app/
+- - _layout.tsx ← Root layout (wraps everything in AuthProvider & handles protected routes)
+- - login.tsx ← Login screen
+- - (tabs)/               
+- - - _layout.tsx ← Tab navigation setup
+- - - index.tsx ← Home screen (Post UI + greeting + logout)
 
-components/
- ├── PostInput.tsx         ← Input box + POST button (sends text + username)
- ├── PostList.tsx          ← Displays posts with username
- ├── LoginForm.tsx         ← Optional: login form UI
- └── ThemedText.tsx        ← Optional: themed text component (e.g., for username styling)
+- components/
+- - PostInput.tsx ← Input box + POST button (sends text + username)
+- - PostList.tsx ← Displays posts with username
+- - LoginForm.tsx ← Optional: login form UI
+- - ThemedText.tsx ← Optional: themed text component (e.g., for username styling)
 
-hooks/
- ├── usePosts.ts           ← Manages post state and adding posts
- └── useAuth.ts            ← Auth logic (login, logout, user state, SecureStore)
+- hooks/
+- - usePosts.ts ← Manages post state and adding posts
+- - useAuth.ts ← Auth logic (login, logout, user state, SecureStore)
