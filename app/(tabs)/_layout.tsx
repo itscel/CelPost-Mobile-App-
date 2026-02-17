@@ -12,28 +12,30 @@ export default function TabLayout() {
     };
   
   return (
-    <Tabs
-      screenOptions={{
-        headerShown: true, // or false if you don't want a header
+    <Tabs>
+      <Tabs.Screen
+        name="index"
+        options={{
+        title: "CelPost",
+        headerRight: () => (
+          <Button title="||>" onPress={handleLogout} />
+        )
       }}
-    >
-      <Tabs.Screen
-        name="index" // this matches your index.tsx file
-        options={{
-          title: "CelPost", // <-- this is what shows on the tab
-          headerRight: () => (
-            <Button title="||>" onPress={handleLogout} />
-          )
-        }}
-      />
-      <Tabs.Screen
-        name="profile"
-        options={{
-          title: "Profile", // text under tab icon
-          tabBarIcon: () => null, // placeholder: no icon yet
-        }}
-      />
-    </Tabs>
-    
+    />
+    <Tabs.Screen
+      name="inventory"
+      options={{
+        title: "Inventory",
+        tabBarIcon: () => null,
+      }}
+    />
+    <Tabs.Screen
+      name="profile"
+      options={{
+        title: "Profile",
+        tabBarIcon: () => null,
+      }}
+    />
+  </Tabs>
   );
 }
